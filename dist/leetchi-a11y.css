@@ -13,13 +13,14 @@
 	--color-dark-grey: #333333;
 	--color-blue: #31709B;
 	--color-facebook: #176FF8;
+	--color-white: #FFFFFF;
 }
 
 /** --------------------------------------------------------------
  * Visibilité de la prise de focus
  */
 *:focus,
-.btn:focus {
+body .btn.active.focus, body .btn.active:focus, body .btn.focus, body .btn:active.focus, body .btn:active:focus, body .btn:focus {
     outline: 2px dashed var(--color-outline) !important;
     outline-offset: 2px !important;
     overflow: visible !important;
@@ -32,47 +33,23 @@
 
 .homepage #sliderCreateEvent .slide-header__heading,
 .homepage #sliderCreateEvent .slide-event__footer {
-	background-color: var(--color-dark-grey);
+	background-color: var(--color-dark-grey) !important;
 }
 
 /** --------------------------------------------------------------
  * Contrastes
  */
-/* Boutons */
-.btn-primary {
-    background-color: var(--color-default-orange);
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: var(--color-dark-orange);
-}
-
-.btn-secondary {
-    background-color: var(--color-default-green) !important;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-    background-color: var(--color-dark-green) !important;
-}
-
-/* Liens */
-.btn-link:focus,
-.btn-link:hover {
-    color: var(--color-default-green) !important;
-}
 
 /* Header */
 .header-nav .navbar:not(.navbar-transparent) .navbar-nav > li > a:not(.dropdown-toggle):hover,
 .header-nav .navbar:not(.navbar-transparent) .navbar-nav > li > a:not(.dropdown-toggle):focus,
 .header-nav .navbar:not(.navbar-transparent) .navbar-nav > li.btn-dropdown:not(.dropdown-toggle).active.open > a {
-    color: var(--color-default-green);
-    border-bottom-color: var(--color-default-green);
+    color: var(--color-default-green) !important;
+    border-bottom-color: var(--color-default-green) !important;
 }
 
 .header-nav .navbar:not(.navbar-transparent) .navbar-nav > li > a {
-	color: var(--color-grey);
+	color: var(--color-grey) !important;
 }
 
 .layout-large-picture .navbar.navbar-transparent {
@@ -81,7 +58,7 @@
 
 /* Accueil */
 .homepage .section-explanation .story-card .story-card__heading {
-    color: var(--color-default-green);
+    color: var(--color-default-green) !important;
 }
 
 /* Formulaires : placeholder */
@@ -102,6 +79,36 @@
 /* Bouton Facebook */
 .btn-connect--facebook {
     background-color: var(--color-facebook) !important;
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: var(--color-default-orange) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--color-dark-orange) !important;
+}
+
+.btn-secondary,
+.header-nav .navbar:not(.navbar-transparent) .navbar-nav .btn-login #loginButton {
+    background-color: var(--color-default-green) !important;
+	color: var(--color-white) !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.header-nav .navbar:not(.navbar-transparent) .navbar-nav .btn-login #loginButton:hover,
+.header-nav .navbar:not(.navbar-transparent) .navbar-nav .btn-login #loginButton:focus {
+    background-color: var(--color-dark-green) !important;
+	color: var(--color-white) !important;
+}
+
+/* Liens */
+.btn-link:focus,
+.btn-link:hover {
+    color: var(--color-default-green) !important;
 }
 
 /**
