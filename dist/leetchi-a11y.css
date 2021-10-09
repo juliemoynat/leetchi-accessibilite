@@ -10,6 +10,7 @@
 	--color-dark-orange: #A33107;
 	--color-outline: #E32849;
 	--color-grey: #797676;
+	--color-dark-grey: #333333;
 	--color-blue: #31709B;
 	--color-facebook: #176FF8;
 }
@@ -26,15 +27,12 @@
 
 /** --------------------------------------------------------------
  * Carrousel :
- * Mettre un fond de couleur pour pouvoir lire le texte et éviter le plus gros du clignotement à cause du défilement automatique
+ * Mettre un fond de couleur pour pouvoir lire le texte
  */
 
-.create-event {
-    background-color: #333333;
-}
-
-.create-event .slide-event__background {
-    background-image: none !important;
+.homepage #sliderCreateEvent .slide-header__heading,
+.homepage #sliderCreateEvent .slide-event__footer {
+	background-color: var(--color-dark-grey);
 }
 
 /** --------------------------------------------------------------
@@ -75,6 +73,10 @@
 
 .header-nav .navbar:not(.navbar-transparent) .navbar-nav > li > a {
 	color: var(--color-grey);
+}
+
+.layout-large-picture .navbar.navbar-transparent {
+	background-color: var(--color-dark-grey) !important;
 }
 
 /* Accueil */

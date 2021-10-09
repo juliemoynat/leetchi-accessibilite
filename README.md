@@ -9,8 +9,9 @@ L’objectif n’est pas que cette extension soit pérenne mais que Leetchi s’
 1. Un certain nombre de contrastes de couleurs pour avoir un minimum de ratio de 4,5:1 ;
 1. La visibilité de la prise de focus ;
 1. Ajout de libellés aux champs (notamment date de naissance et d'autres) ;
-1. La navigation au clavier ;
-1. Le carrousel qui défile automatiquement (il ne défile juste plus - [méthode de la RACHE](http://www.la-rache.com/)).
+1. La navigation au clavier.
+
+Note : je ne peux pas corriger le carrousel qui défile automatiquement.
 
 ## Avertissements
 

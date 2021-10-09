@@ -1,7 +1,7 @@
 jQuery.noConflict();
 jQuery( document ).ready(function( $ ) {
 
-	/** --------------------------------------------------------------
+	/**
 	 * Formulaire de don : gestion des libellés de champs et de groupes de champs
 	 */
 
@@ -28,7 +28,7 @@ jQuery( document ).ready(function( $ ) {
 	/* Date de naissance : ajouter fieldset + legend (ARIA) */
 	var birthdateFieldset = $('#contributionForm .form-group__birthdate');
 	var birthdateLegend = $('#contributionForm .form-group__birthdate label[for="FormDto_user_name"]');
-	var birthdateLegendID = 'bithdate-legend-id';
+	var birthdateLegendID = 'birthdate-legend-id';
 
 	birthdateLegend.replaceWith('<p id="' + birthdateLegendID + '">' + birthdateLegend.text() + '</p>');
 
@@ -37,24 +37,24 @@ jQuery( document ).ready(function( $ ) {
 	/* Date de naissance : ajouter les libellés aux champs */
 	// Jour
 	var birthdateDaySelect = $('#contributionForm select.birthdateDay');
-	var bithdateDayLabel = $('<label for="birthdateDay-id" class="sr-only">Jour de naissance</label>');
+	var birthdateDayLabel = $('<label for="birthdateDay-id" class="sr-only">Jour de naissance</label>');
 
 	birthdateDaySelect.attr('id', 'birthdateDay-id');
-	bithdateDayLabel.insertBefore(birthdateDaySelect);
+	birthdateDayLabel.insertBefore(birthdateDaySelect);
 
 	// Mois
 	var birthdateMonthSelect = $('#contributionForm select.birthdateMonth');
-	var bithdateMonthLabel = $('<label for="birthdateMonth-id" class="sr-only">Mois de naissance</label>');
+	var birthdateMonthLabel = $('<label for="birthdateMonth-id" class="sr-only">Mois de naissance</label>');
 
 	birthdateMonthSelect.attr('id', 'birthdateMonth-id');
-	bithdateMonthLabel.insertBefore(birthdateMonthSelect);
+	birthdateMonthLabel.insertBefore(birthdateMonthSelect);
 
 	// Année
 	var birthdateYearSelect = $('#contributionForm select.birthdateYear');
-	var bithdateYearLabel = $('<label for="birthdateYear-id" class="sr-only">Année de naissance</label>');
+	var birthdateYearLabel = $('<label for="birthdateYear-id" class="sr-only">Année de naissance</label>');
 
 	birthdateYearSelect.attr('id', 'birthdateYear-id');
-	bithdateYearLabel.insertBefore(birthdateYearSelect);
+	birthdateYearLabel.insertBefore(birthdateYearSelect);
 
 	/* Montant du don : ajout fieldset + legend (ARIA) */
 	var suggestedAmountFieldset = $('#contributionForm .suggested-amount');
