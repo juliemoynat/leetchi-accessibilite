@@ -3,12 +3,23 @@
  * Par Julie Moynat (https://lalutineduweb.fr)
  */
 
+:root {
+	--color-default-green: #5D8210;
+	--color-dark-green: #505F21;
+	--color-default-orange: #CA5010;
+	--color-dark-orange: #A33107;
+	--color-outline: #E32849;
+	--color-grey: #797676;
+	--color-blue: #31709B;
+	--color-facebook: #176FF8;
+}
+
 /** --------------------------------------------------------------
  * Visibilité de la prise de focus
  */
 *:focus,
 .btn:focus {
-    outline: 2px dashed #E32849 !important;
+    outline: 2px dashed var(--color-outline) !important;
     outline-offset: 2px !important;
     overflow: visible !important;
 }
@@ -31,60 +42,64 @@
  */
 /* Boutons */
 .btn-primary {
-    background-color: #CA5010;
+    background-color: var(--color-default-orange);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #A33107;
+    background-color: var(--color-dark-orange);
 }
 
 .btn-secondary {
-    background-color: #5D8210 !important;
+    background-color: var(--color-default-green) !important;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background-color: #505F21 !important;
+    background-color: var(--color-dark-green) !important;
 }
 
 /* Liens */
 .btn-link:focus,
 .btn-link:hover {
-    color: #5D8210 !important;
+    color: var(--color-default-green) !important;
 }
 
 /* Header */
 .header-nav .navbar:not(.navbar-transparent) .navbar-nav > li > a:not(.dropdown-toggle):hover,
 .header-nav .navbar:not(.navbar-transparent) .navbar-nav > li > a:not(.dropdown-toggle):focus,
 .header-nav .navbar:not(.navbar-transparent) .navbar-nav > li.btn-dropdown:not(.dropdown-toggle).active.open > a {
-    color: #5D8210;
-    border-bottom-color: #5D8210;
+    color: var(--color-default-green);
+    border-bottom-color: var(--color-default-green);
+}
+
+.header-nav .navbar:not(.navbar-transparent) .navbar-nav > li > a {
+	color: var(--color-grey);
 }
 
 /* Accueil */
 .homepage .section-explanation .story-card .story-card__heading {
-    color: #5D8210;
+    color: var(--color-default-green);
 }
 
 /* Formulaires : placeholder */
 ::placeholder {
     opacity: 1 !important;
-    color: #797676 !important;
+    color: var(--color-grey) !important;
 }
 
 ::-moz-placeholder {
     opacity: 1 !important;
-    color: #797676 !important;
+    color: var(--color-grey) !important;
 }
 
 ::-webkit-input-placeholder {
-    color: #797676 !important;
+    color: var(--color-grey) !important;
 }
 
 /* Bouton Facebook */
 .btn-connect--facebook {
-    background-color: #176FF8 !important;
+    background-color: var(--color-facebook) !important;
 }
 
 /**
@@ -95,28 +110,28 @@
 .radio-custom-input:checked + .radio-custom-label::after, .radio-custom-input:not(:checked) + .radio-custom-label::after, /* Boutons radio */
 
 .checkbox-custom-input:checked ~ .checkbox-custom-label::after, .checkbox-custom-input:checked ~ .checkbox-custom-label::before, .checkbox-custom-input:disabled:checked ~ .checkbox-custom-label::after, .checkbox-custom-input:disabled:checked ~ .checkbox-custom-label::before, .checkbox-custom-input:disabled ~ .checkbox-custom-label::after, .checkbox-custom-input:disabled ~ .checkbox-custom-label::before /* Checkbox */ {
-    background-color: #5D8210 !important;
+    background-color: var(--color-default-green) !important;
 }
 
 .lt-value-selector .lt-value-selector__radio-label:active, .lt-value-selector .lt-value-selector__radio-label:focus, .lt-value-selector .lt-value-selector__radio-label:hover {
-    background-color: #505F21 !important;
+    background-color: var(--color-dark-green) !important;
 }
 
 /* Tooltip */
 [data-toggle="tooltip"]:not([class*="corner"]) {
-    color: #797676 !important;
+    color: var(--color-grey) !important;
 }
 .tooltip-inner {
-    background-color: #5D8210 !important;
+    background-color: var(--color-default-green) !important;
 }
 
 /* Sidebar */
 .panel-aside--green {
-    color: #505F21 !important;
+    color: var(--color-dark-green) !important;
 }
 
 .panel-aside--blue {
-    color: #31709B !important;
+    color: var(--color-blue) !important;
 }
 
 /** --------------------------------------------------------------
@@ -148,7 +163,7 @@ input[type="radio"]:focus + label,
 .checkbox-input-group .checkbox-custom-input:focus ~ .checkbox-custom-label::before,
 .form-aside .checkbox-custom-input:focus ~ .checkbox-custom-label::before,
 .form-group .checkbox-custom-input:focus ~ .checkbox-custom-label::before {
-    outline: 2px dashed #E32849 !important;
+    outline: 2px dashed var(--color-outline) !important;
     outline-offset: 2px !important;
 }
 
