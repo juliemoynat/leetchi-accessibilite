@@ -1,0 +1,171 @@
+/**
+ * Feuille de style personnalisée pour corriger des problèmes d'accessibilité du site Leetchi.com
+ * Par Julie Moynat (https://lalutineduweb.fr)
+ */
+
+/** --------------------------------------------------------------
+ * Visibilité de la prise de focus
+ */
+*:focus,
+.btn:focus {
+    outline: 2px dashed #E32849 !important;
+    outline-offset: 2px !important;
+    overflow: visible !important;
+}
+
+/** --------------------------------------------------------------
+ * Carrousel :
+ * Mettre un fond de couleur pour pouvoir lire le texte et éviter le plus gros du clignotement à cause du défilement automatique
+ */
+
+.create-event {
+    background-color: #333333;
+}
+
+.create-event .slide-event__background {
+    background-image: none !important;
+}
+
+/** --------------------------------------------------------------
+ * Contrastes
+ */
+/* Boutons */
+.btn-primary {
+    background-color: #CA5010;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #A33107;
+}
+
+.btn-secondary {
+    background-color: #5D8210 !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #505F21 !important;
+}
+
+/* Liens */
+.btn-link:focus,
+.btn-link:hover {
+    color: #5D8210 !important;
+}
+
+/* Header */
+.header-nav .navbar:not(.navbar-transparent) .navbar-nav > li > a:not(.dropdown-toggle):hover,
+.header-nav .navbar:not(.navbar-transparent) .navbar-nav > li > a:not(.dropdown-toggle):focus,
+.header-nav .navbar:not(.navbar-transparent) .navbar-nav > li.btn-dropdown:not(.dropdown-toggle).active.open > a {
+    color: #5D8210;
+    border-bottom-color: #5D8210;
+}
+
+/* Accueil */
+.homepage .section-explanation .story-card .story-card__heading {
+    color: #5D8210;
+}
+
+/* Formulaires : placeholder */
+::placeholder {
+    opacity: 1 !important;
+    color: #797676 !important;
+}
+
+::-moz-placeholder {
+    opacity: 1 !important;
+    color: #797676 !important;
+}
+
+::-webkit-input-placeholder {
+    color: #797676 !important;
+}
+
+/* Bouton Facebook */
+.btn-connect--facebook {
+    background-color: #176FF8 !important;
+}
+
+/**
+ * Page de don
+ */
+/* Champs */
+.lt-value-selector .lt-value-selector__radio:checked + .lt-value-selector__radio-label, /* montant */
+.radio-custom-input:checked + .radio-custom-label::after, .radio-custom-input:not(:checked) + .radio-custom-label::after, /* Boutons radio */
+
+.checkbox-custom-input:checked ~ .checkbox-custom-label::after, .checkbox-custom-input:checked ~ .checkbox-custom-label::before, .checkbox-custom-input:disabled:checked ~ .checkbox-custom-label::after, .checkbox-custom-input:disabled:checked ~ .checkbox-custom-label::before, .checkbox-custom-input:disabled ~ .checkbox-custom-label::after, .checkbox-custom-input:disabled ~ .checkbox-custom-label::before /* Checkbox */ {
+    background-color: #5D8210 !important;
+}
+
+.lt-value-selector .lt-value-selector__radio-label:active, .lt-value-selector .lt-value-selector__radio-label:focus, .lt-value-selector .lt-value-selector__radio-label:hover {
+    background-color: #505F21 !important;
+}
+
+/* Tooltip */
+[data-toggle="tooltip"]:not([class*="corner"]) {
+    color: #797676 !important;
+}
+.tooltip-inner {
+    background-color: #5D8210 !important;
+}
+
+/* Sidebar */
+.panel-aside--green {
+    color: #505F21 !important;
+}
+
+.panel-aside--blue {
+    color: #31709B !important;
+}
+
+/** --------------------------------------------------------------
+ * Rendre les checkbox et radio accessibles au clavier
+ */
+input[type="checkbox"],
+input[type="radio"] {
+    /* On les remet accessibles au clavier et lecteurs d'écran */
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    /* On les cache de façon accessible : https://www.ffoodd.fr/cache-cache-css/#modifications */
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+	clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+
+/* Rétablir le style de focus sur les checkbox et radio personnalisés */
+input[type="checkbox"]:focus + label,
+input[type="radio"]:focus + label,
+.checkbox-input-group .checkbox-custom-input:focus ~ .checkbox-custom-label::before,
+.form-aside .checkbox-custom-input:focus ~ .checkbox-custom-label::before,
+.form-group .checkbox-custom-input:focus ~ .checkbox-custom-label::before {
+    outline: 2px dashed #E32849 !important;
+    outline-offset: 2px !important;
+}
+
+/**
+ * Date de naissance avec des select
+ */
+.birthdateContainer {
+    overflow: visible !important;
+}
+
+.selectDisplay.birthdateDay,
+.selectDisplay.birthdateMonth,
+.selectDisplay.birthdateYear {
+    display: none !important;
+}
+.birthdateDay,
+.birthdateMonth,
+.birthdateYear {
+    display: block !important;
+}

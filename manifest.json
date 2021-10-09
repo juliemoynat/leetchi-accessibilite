@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Leetchi Accessibilité",
+    "version": "1.0",
+    "author": "Julie Moynat",
+    "homepage_url": "https://github.com/juliemoynat/leetchi-accessibilite",
+
+    "description": "Corrige un certain nombre de problèmes d'accessibilité du site Leetchi.com",
+
+    "icons": {
+      "48": "icons/leetchi-a11y-48.jpg",
+      "96": "icons/leetchi-a11y-96.jpg"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.leetchi.com/*"],
+            "js": ["dist/leetchi-a11y.js"],
+            "css": ["dist/leetchi-a11y.css"]
+        }
+    ]
+}
