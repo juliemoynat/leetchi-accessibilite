@@ -68,7 +68,7 @@ jQuery( document ).ready(function( $ ) {
 
 	/* Montant du don : ajout libellé au champ montant perso */
 	var suggestedAmountCustomField = $('#contributionForm #FormViewModel_ContributionAmountCents');
-	var suggestedAmountCustomLabel = $('<label for="FormViewModel_ContributionAmountCents">Indiquer plutôt un montant personnalisé</label>');
+	var suggestedAmountCustomLabel = $('<label for="FormViewModel_ContributionAmountCents">Indiquer un montant personnalisé</label>');
 
 	suggestedAmountCustomLabel.insertBefore(suggestedAmountCustomField);
 
