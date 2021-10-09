@@ -20,7 +20,9 @@
  * Visibilité de la prise de focus
  */
 *:focus,
-body .btn.active.focus, body .btn.active:focus, body .btn.focus, body .btn:active.focus, body .btn:active:focus, body .btn:focus {
+body .btn.active.focus, body .btn.active:focus, body .btn.focus, body .btn:active.focus, body .btn:active:focus, body .btn:focus,
+
+.lt-klaro .cookie-modal .cm-btn.active.focus, .lt-klaro .cookie-modal .cm-btn.active:focus, .lt-klaro .cookie-modal .cm-btn.focus, .lt-klaro .cookie-modal .cm-btn:active.focus, .lt-klaro .cookie-modal .cm-btn:active:focus, .lt-klaro .cookie-modal .cm-btn:focus, .lt-klaro .cookie-notice .cm-btn.active.focus, .lt-klaro .cookie-notice .cm-btn.active:focus, .lt-klaro .cookie-notice .cm-btn.focus, .lt-klaro .cookie-notice .cm-btn:active.focus, .lt-klaro .cookie-notice .cm-btn:active:focus, .lt-klaro .cookie-notice .cm-btn:focus {
     outline: 2px dashed var(--color-outline) !important;
     outline-offset: 2px !important;
     overflow: visible !important;
@@ -141,6 +143,20 @@ body .btn.active.focus, body .btn.active:focus, body .btn.focus, body .btn:activ
 
 .panel-aside--blue {
     color: var(--color-blue) !important;
+}
+
+/* Bandeau cookie */
+.lt-klaro .cookie-modal .cm-btn.cm-btn-accept, .lt-klaro .cookie-modal .cm-btn.cm-btn-danger, .lt-klaro .cookie-modal .cm-btn.cm-btn-decline, .lt-klaro .cookie-modal .cm-btn.cm-btn-success, .lt-klaro .cookie-notice .cm-btn.cm-btn-accept, .lt-klaro .cookie-notice .cm-btn.cm-btn-danger, .lt-klaro .cookie-notice .cm-btn.cm-btn-decline, .lt-klaro .cookie-notice .cm-btn.cm-btn-success {
+	background-color: var(--color-default-orange) !important;
+}
+
+.lt-klaro .cookie-modal .cm-btn.cm-btn-accept:hover, .lt-klaro .cookie-modal .cm-btn.cm-btn-danger:hover, .lt-klaro .cookie-modal .cm-btn.cm-btn-decline:hover, .lt-klaro .cookie-modal .cm-btn.cm-btn-success:hover, .lt-klaro .cookie-notice .cm-btn.cm-btn-accept:hover, .lt-klaro .cookie-notice .cm-btn.cm-btn-danger:hover, .lt-klaro .cookie-notice .cm-btn.cm-btn-decline:hover, .lt-klaro .cookie-notice .cm-btn.cm-btn-success:hover {
+	background-color: var(--color-dark-orange) !important;
+}
+
+.lt-klaro .cookie-modal .cm-btn.cm-btn-info, .lt-klaro .cookie-notice .cm-btn.cm-btn-info {
+	background-color: var(--color-dark-grey) !important;
+	color: var(--color-white) !important;
 }
 
 /** --------------------------------------------------------------
