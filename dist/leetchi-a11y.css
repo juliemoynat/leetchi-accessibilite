@@ -159,6 +159,18 @@ body .btn.active.focus, body .btn.active:focus, body .btn.focus, body .btn:activ
 	color: var(--color-white) !important;
 }
 
+/* Bandeau d'alerte après création de compte */
+.alert-info {
+	background-color: var(--color-default-green) !important;
+}
+
+/* Compte */
+.sidebar-navigation-list a:hover,
+.sidebar-navigation-list a:focus {
+	color: var(--color-dark-green) !important;
+	text-decoration: underline !important;
+}
+
 /** --------------------------------------------------------------
  * Rendre les checkbox et radio accessibles au clavier
  */
