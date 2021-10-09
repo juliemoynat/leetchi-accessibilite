@@ -4,6 +4,17 @@ Cette extension de navigateur a pour but de corriger un certain nombre de probl�
 
 L’objectif n’est pas que cette extension soit pérenne mais que Leetchi s’empare ensuite du problème pour corriger son site web.
 
+Cette extension devrait rendre possible, en particulier aux personnes aveugles, de faire un don sur Leetchi. Mais attention : [créez un compte](https://www.leetchi.com/fr/User/Authenticate?returnUrl=%2F) avant de participer à une cagnotte car si vous créez le compte dans la page de don, vous rencontrerez des problèmes que je ne peux résoudre.
+
+## Pages qui ont été vues pour cette extension
+
+- Page d’accueil
+- Page d’une cagnotte
+- Page de connexion / création de compte
+- Espace mon compte (mais là, je n’ai rien pu faire…)
+- Page de participation à une cagnotte + page paiement par carte bancaire
+- Page de félicitations après un don
+
 ## Problèmes notamment corrigés
 
 1. Un certain nombre de contrastes de couleurs pour avoir un minimum de ratio de 4,5:1 ;
@@ -15,6 +26,7 @@ L’objectif n’est pas que cette extension soit pérenne mais que Leetchi s’
 
 ## Problèmes nuisibles détectés mais que je ne peux pas corriger
 
+1. Si on veut participer à une cagnotte et créer son compte à ce moment-là (dans la page de don), les champs de la date de naissance ont un script qui fait perdre le focus dès qu’on le met sur un champ. De plus, il y a un piège au clavier quand on essaye de naviguer en arrière avec <kbd>Maj</kbd> + <kbd>Tab</kbd>.
 1. Le carrousel qui défile automatiquement. Il faut que Leetchi ajoute l’option pour avoir le bouton pause (elle existe dans le script utilisé donc c’est rapide à faire !).
 1. Sur la page d’accueil, quand on est connectée, dans l’en-tête du site, il y a un menu qui doit s’ouvrir quand on clique sur le bouton avec son prénom. En navigation clavier avec un lecteur d’écran, il ne se déplie pas. Il faut passer par une autre page pour que ça fonctionne…
 1. Dans le compte, je ne peux pas corriger les champs de formulaire qui ne sont pas accessibles (Pays de résidence, Nationalité, Région, Langue, Date de naissance) parce que cette partie du site est faite en React donc le DOM est chargé après le JavaScript et je ne peux pas intervenir dessus.
