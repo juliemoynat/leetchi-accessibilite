@@ -16,7 +16,7 @@
         {
             "matches": ["*://*.leetchi.com/*"],
             "run_at": "document_end",
-            "js": ["dist/jquery-3.6.0.min.js", "dist/jquery-donate-form-a11y.js", "dist/jquery-create-account-a11y.js", "dist/jquery-carousel-a11y.js"],
+            "js": ["dist/jquery-3.6.0.min.js", "dist/jquery-donate-form-a11y.js", "dist/jquery-create-account-a11y.js", "dist/jquery-carousel-a11y.js", "dist/jquery-payment-a11y.js"],
             "css": ["dist/leetchi-a11y.css"]
         }
     ]

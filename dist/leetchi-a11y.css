@@ -22,7 +22,9 @@
 *:focus,
 body .btn.active.focus, body .btn.active:focus, body .btn.focus, body .btn:active.focus, body .btn:active:focus, body .btn:focus,
 
-.lt-klaro .cookie-modal .cm-btn.active.focus, .lt-klaro .cookie-modal .cm-btn.active:focus, .lt-klaro .cookie-modal .cm-btn.focus, .lt-klaro .cookie-modal .cm-btn:active.focus, .lt-klaro .cookie-modal .cm-btn:active:focus, .lt-klaro .cookie-modal .cm-btn:focus, .lt-klaro .cookie-notice .cm-btn.active.focus, .lt-klaro .cookie-notice .cm-btn.active:focus, .lt-klaro .cookie-notice .cm-btn.focus, .lt-klaro .cookie-notice .cm-btn:active.focus, .lt-klaro .cookie-notice .cm-btn:active:focus, .lt-klaro .cookie-notice .cm-btn:focus {
+.lt-klaro .cookie-modal .cm-btn.active.focus, .lt-klaro .cookie-modal .cm-btn.active:focus, .lt-klaro .cookie-modal .cm-btn.focus, .lt-klaro .cookie-modal .cm-btn:active.focus, .lt-klaro .cookie-modal .cm-btn:active:focus, .lt-klaro .cookie-modal .cm-btn:focus, .lt-klaro .cookie-notice .cm-btn.active.focus, .lt-klaro .cookie-notice .cm-btn.active:focus, .lt-klaro .cookie-notice .cm-btn.focus, .lt-klaro .cookie-notice .cm-btn:active.focus, .lt-klaro .cookie-notice .cm-btn:active:focus, .lt-klaro .cookie-notice .cm-btn:focus,
+
+.fundraising-contribution-medium #PaylineWidget .pl-pay-btn:focus {
     outline: 2px dashed var(--color-outline) !important;
     outline-offset: 2px !important;
     overflow: visible !important;
@@ -84,12 +86,20 @@ body .btn.active.focus, body .btn.active:focus, body .btn.focus, body .btn:activ
 }
 
 /* Boutons */
-.btn-primary {
+.btn-default {
+    color: var(--color-white) !important;
+    background-color: var(--color-dark-grey) !important;
+}
+
+.btn-primary,
+.fundraising-contribution-medium #PaylineWidget .pl-pay-btn {
     background-color: var(--color-default-orange) !important;
 }
 
 .btn-primary:hover,
-.btn-primary:focus {
+.btn-primary:focus,
+.fundraising-contribution-medium #PaylineWidget .pl-pay-btn:hover,
+.fundraising-contribution-medium #PaylineWidget .pl-pay-btn:focus {
     background-color: var(--color-dark-orange) !important;
 }
 
