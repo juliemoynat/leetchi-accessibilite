@@ -58,7 +58,7 @@ jQuery( document ).ready(function( $ ) {
 
 	/* Montant du don : ajout fieldset + legend (ARIA) */
 	var suggestedAmountFieldset = $('#contributionForm .suggested-amount');
-	var suggestedAmountLegend = $('#contributionForm .suggested-amount > p:first-child');
+	var suggestedAmountLegend = $('#contributionForm .suggested-amount > p');
 	var suggestedAmountLegendID = 'suggested-amount-id';
 	var suggestedAmountRadioList = $('#contributionForm .suggested-amount .lt-value-selector__radio-list');
 
@@ -74,7 +74,7 @@ jQuery( document ).ready(function( $ ) {
 
 	/* Choix moyen de paiment : ajout fieldset + legend (ARIA) */
 	var chooseCreditCardFieldset = $('#contributionForm .panel-choose-credit-card');
-	var chooseCreditCardLegend = $('#contributionForm .panel-choose-credit-card > p:first-child');
+	var chooseCreditCardLegend = $('#contributionForm .panel-choose-credit-card > p');
 	var chooseCreditCardLegendID = 'choose-credit-card-id';
 	var chooseCreditCardRadioList = $('#contributionForm .list-payment-method');
 
