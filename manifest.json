@@ -8,14 +8,15 @@
     "description": "Corrige un certain nombre de problèmes d'accessibilité du site Leetchi.com",
 
     "icons": {
-      "48": "icons/leetchi-a11y-48.jpg",
-      "96": "icons/leetchi-a11y-96.jpg"
+        "48": "icons/leetchi-a11y-48.jpg",
+        "96": "icons/leetchi-a11y-96.jpg"
     },
 
     "content_scripts": [
         {
             "matches": ["*://*.leetchi.com/*"],
-            "js": ["dist/jquery-3.6.0.min.js", "dist/jquery-donate-form-a11y.js", "dist/jquery-create-account-a11y.js"],
+            "run_at": "document_end",
+            "js": ["dist/jquery-3.6.0.min.js", "dist/jquery-donate-form-a11y.js", "dist/jquery-create-account-a11y.js", "dist/jquery-carousel-a11y.js"],
             "css": ["dist/leetchi-a11y.css"]
         }
     ]
