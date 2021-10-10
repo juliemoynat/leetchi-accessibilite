@@ -18,11 +18,11 @@ Cette extension devrait rendre possible, en particulier aux personnes aveugles, 
 
 ## Problèmes notamment corrigés
 
-1. Un certain nombre de contrastes de couleurs pour avoir un minimum de ratio de 4,5:1 ;
-1. La visibilité de la prise de focus ;
-1. Ajout de libellés aux champs dans les formulaire d’inscription, de don ;
-1. Ajout de titre de cadre (`iframe`) aux champs de paiement qui sont dans des cadres et n’ont pas de libellé associé (le titre de cadre limite la casse) ;
-1. La navigation au clavier dans les formulaires d’inscription, de don ;
+1. Correction d’un certain nombre de contrastes de couleurs pour avoir un minimum de ratio de 4,5:1 entre le texte et le fond ;
+1. Rétablissement de la visibilité de la prise de focus ;
+1. Ajout de libellés aux champs dans les formulaires d’inscription, de don ;
+1. Ajout de titre de cadre (iframe) aux champs de paiement qui sont dans des cadres et n’ont pas de libellé associé. Le titre de cadre permet de limiter la casse car le lecteur d’écran lira le titre « Champ de numéro de carte » au lieu de rien ! ;
+1. Correction de la navigation au clavier dans les formulaires d’inscription, de don ;
 1. Suppression de la vocalisation automatique des changements de diapositives dans les carrousels.
 
 ## Problèmes nuisibles détectés mais que je ne peux pas corriger
@@ -50,4 +50,12 @@ La surcouche JavaScript est écrite en jQuery parce que c’était plus facile p
 
 Tout ce travail montre bien qu’aucun outil ne pourrait corriger automatiquement l’accessibilité d’un site web puisque, déjà, en faisant une surcouche manuellement, on ne peut pas faire tout ce qu’on veut !
 
-Pour en savoir encore plus sur cette extension, j’ai écrit un article sur le sujet : [Et si on corrigeait l’accessibilité du site de cagnotte en ligne Leetchi ?](https://www.lalutineduweb.fr/corriger-accessibilite-cagnotte-leetchi/).
+Pour en savoir encore plus sur cette extension, j’ai écrit un article sur le sujet : [Et si on corrigeait l’accessibilité du site de cagnotte en ligne Leetchi ?](https://www.lalutineduweb.fr/corriger-accessibilite-cagnotte-leetchi/)
+
+## Travailler sur l’extension ou la tester en local
+
+Si vous souhaitez contribuer à ce projet ou le tester en attendant en local, en attendant sa publication dans le magasin d’extensions de Firefox, vous aurez besoin de [voir la documentation officielle de Firefox](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/).
+
+## Licence
+
+[GNU General Public License v3.0](LICENSE.md)
