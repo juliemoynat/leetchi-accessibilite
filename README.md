@@ -1,5 +1,7 @@
 # Leetchi accessibilité - extension de navigateur
 
+**[Installer l’extension sur Firefox](https://addons.mozilla.org/fr/firefox/addon/leetchi-accessibilité/)**
+
 Cette extension de navigateur a pour but de corriger un certain nombre de problèmes d’accessibilité du site [Leetchi.com](https://www.leetchi.com/) afin qu’il soit utilisable par les personnes handicapées car il ne l’est pas, par défaut.
 
 L’objectif n’est pas que cette extension soit pérenne mais que Leetchi s’empare ensuite du problème pour corriger son site web.
@@ -54,7 +56,7 @@ Pour en savoir encore plus sur cette extension, j’ai écrit un article sur le 
 
 ## Travailler sur l’extension ou la tester en local
 
-Si vous souhaitez contribuer à ce projet ou le tester en attendant en local, en attendant sa publication dans le magasin d’extensions de Firefox, vous aurez besoin de [voir la documentation officielle de Firefox](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/).
+Si vous souhaitez contribuer à ce projet, vous aurez besoin de [voir la documentation officielle de Firefox](https://extensionworkshop.com/documentation/develop/temporary-installation-in-firefox/) pour savoir comment la tester en local.
 
 ## Licence
 
